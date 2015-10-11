@@ -1,16 +1,16 @@
-qbt_fringe.linter.prerelease@0b660e36dc49cec51d4f8c893f415aa90edf1cdd:
+qbt_fringe.linter.prerelease@2abee1797313573388e39c60d8147f57f3dbd15f:
     EffectiveTree: 65ad7293763dc1c9a60ba8658eabf6089ba85e6b
     QbtVersion: 3eb9bfa6ca61dd44af98cea8ed7640a838606418
     Weak:
-        qbt_fringe.linter.main@cadc1e351cd53da21e5b9e62959e10550fad8bf6:
-            EffectiveTree: 33e13074f08e53d075b8755df52b05ac0c7c4bd6
+        qbt_fringe.linter.main@ead1c69e37b69147b90d143b43fb15b731b58721:
+            EffectiveTree: 47fb6ea2bf940572605dbf585344660e43cfd7ba
             QbtVersion: 3eb9bfa6ca61dd44af98cea8ed7640a838606418
             Strong:
-                misc1.commons.options.main@638721f01328fd0422131e35b57ebfc413cabaa9:
+                misc1.commons.options.main@4a2e7422b3767dee6dd109c2fca5f94b3fdd08bc:
                     EffectiveTree: 11798d03aab994eaa8a0035f3150d1a8cfc02b76
                     QbtVersion: 3eb9bfa6ca61dd44af98cea8ed7640a838606418
                     Strong:
-                        misc1.commons.core.main@e8209bf7ea4a6aea33407c2afadd6b98b9aea592:
+                        misc1.commons.core.main@90b873bb69b787b7209d9a781c179a512137ea79:
                             EffectiveTree: a51e9982892461c67e2c4b808d5c987ce5ebe9cf
                             QbtVersion: 3eb9bfa6ca61dd44af98cea8ed7640a838606418
                             Strong:
@@ -95,17 +95,17 @@ qbt_fringe.linter.prerelease@0b660e36dc49cec51d4f8c893f415aa90edf1cdd:
                                     QbtVersion: 3eb9bfa6ca61dd44af98cea8ed7640a838606418
                                     Metadata:
                                         buildType: COPY
-                                qbt_fringe.linter.release@429096ab802d81e95149b4c0e46e777f4d1e5c1e:
-                                    EffectiveTree: 2bac6ef048f95977acc7763e5b0fab943606eadf
+                                qbt_fringe.linter.release@72aee61113638b587c5245b7121fec11e23dc4e8:
+                                    EffectiveTree: 0cabb4a0408fb4c198a1a6aad17d7b1c34ce3c71
                                     QbtVersion: 3eb9bfa6ca61dd44af98cea8ed7640a838606418
                                     Metadata:
                                         buildType: COPY
                     Weak:
                         3p.gradle@5a266f4b13b9535b488f3e9cdb18c733b95a3662...
-                        qbt_fringe.linter.release@429096ab802d81e95149b4c0e46e777f4d1e5c1e...
+                        qbt_fringe.linter.release@72aee61113638b587c5245b7121fec11e23dc4e8...
             Weak:
                 3p.gradle@5a266f4b13b9535b488f3e9cdb18c733b95a3662...
-                qbt_fringe.linter.release@429096ab802d81e95149b4c0e46e777f4d1e5c1e...
+                qbt_fringe.linter.release@72aee61113638b587c5245b7121fec11e23dc4e8...
         qbt_fringe.wrapper_generator.release@dd9b1b9b888e84d8fd4f176e9a599926795b52f7:
             EffectiveTree: b0717985b8c09a9a3a19887a11cef8cd95091425
             QbtVersion: 3eb9bfa6ca61dd44af98cea8ed7640a838606418
