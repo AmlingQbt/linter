@@ -9,7 +9,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.zip.ZipEntry;
@@ -152,25 +151,22 @@ public class Main extends SimpleMain<Main.Options, Exception> {
                 failures.add(Triple.of(failure.getLeft(), lintersEntry.getKey(), failure.getRight()));
             }
         }
-        Collections.sort(failures, new Comparator<Triple<Integer, String, String>>() {
-            @Override
-            public int compare(Triple<Integer, String, String> l, Triple<Integer, String, String> r) {
-                int lLine = l.getLeft();
-                int rLine = r.getLeft();
-                if(lLine < rLine) {
-                    return -1;
-                }
-                if(lLine > rLine) {
-                    return 1;
-                }
-
-                int ret = l.getMiddle().compareTo(r.getMiddle());
-                if(ret != 0) {
-                    return ret;
-                }
-
-                return l.getRight().compareTo(r.getRight());
+        Collections.sort(failures, (l, r) -> {
+            int lLine = l.getLeft();
+            int rLine = r.getLeft();
+            if(lLine < rLine) {
+                return -1;
             }
+            if(lLine > rLine) {
+                return 1;
+            }
+
+            int ret = l.getMiddle().compareTo(r.getMiddle());
+            if(ret != 0) {
+                return ret;
+            }
+
+            return l.getRight().compareTo(r.getRight());
         });
         for(Triple<Integer, String, String> failure : failures) {
             System.out.println(label + ":" + (failure.getLeft() + 1) + ":" + failure.getMiddle() + ":" + failure.getRight());
